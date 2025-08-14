@@ -15,10 +15,20 @@
     }
 }
 
+@keyframes pulseGlow {
+    0%, 100% {
+        text-shadow: 0 0 8px rgba(0, 180, 219, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 16px rgba(0, 180, 219, 0.9);
+    }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #141E30 0%, #243B55 100%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -82,6 +92,16 @@ select {
     border: 1px solid #475569;
     border-radius: 8px;
     transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23cbd5e1' viewBox='0 0 20 20'%3e%3cpath fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.23 8.29a.75.75 0 01.02-1.06z'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
 }
 
 input[type="number"]:focus,
@@ -165,6 +185,26 @@ select:focus {
     color: #fda4af;
 }
 
+.footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.creator-link {
+    color: #00B4DB;
+    font-weight: 500;
+    text-decoration: none;
+    animation: pulseGlow 3s infinite ease-in-out;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.creator-link:hover {
+    color: #16d5ff;
+    text-shadow: 0 0 12px rgba(0, 180, 219, 1);
+}
+
 @media (max-width: 600px) {
     .card {
         padding: 25px;
@@ -175,5 +215,8 @@ select:focus {
     }
     .result-date {
         font-size: 28px;
+    }
+    .footer {
+        margin-top: 30px;
     }
 }
