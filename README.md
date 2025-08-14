@@ -31,7 +31,7 @@ A calculadora carregará o mês e o ano atuais e exibirá o quinto dia útil. Vo
 *   **JavaScript**
 *   **APIs:**
     *   [BrasilAPI](https://brasilapi.com.br/) para feriados nacionais.
-    *   [IP-API](http://ip-api.com/) para geolocalização e detecção do estado.
+    *   [ipwho.is](https://ipwho.is/) para geolocalização e detecção do estado.
 
 ## Screenshot
 

@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return userLocationCache;
         }
         try {
-            const response = await fetch('https://ip-api.com/json/?fields=countryCode,region');
+            const response = await fetch('https://ipwho.is/');
             const data = await response.json();
-            if (data.countryCode === 'BR') {
-                userLocationCache = { state: data.region };
+            if (data.country_code === 'BR') {
+                userLocationCache = { state: data.region_code };
                 return userLocationCache;
             }
         } catch (error) {
