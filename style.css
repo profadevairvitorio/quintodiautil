@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #141E30 0%, #243B55 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #e2e8f0;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: #94a3b8;
+    margin-bottom: 35px;
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.input-field {
+    flex: 1;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #cbd5e1;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #e2e8f0;
+    background-color: #334155;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #00B4DB;
+    box-shadow: 0 0 0 4px rgba(0, 180, 219, 0.2);
+}
+
+#calculateBtn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #00B4DB 0%, #0083B0 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 150, 180, 0.25);
+}
+
+#calculateBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 180, 219, 0.4);
+}
+
+#calculateBtn:disabled {
+    cursor: not-allowed;
+    background: #5a6a7e;
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#calculateBtn:active {
+    transform: translateY(0);
+}
+
+.result-area {
+    margin-top: 35px;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #334155;
+    opacity: 0;
+    transform: scale(0.98);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    gap: 4px;
+}
+
+.result-area.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.result-label {
+    font-size: 15px;
+    font-weight: 400;
+    color: #94a3b8;
+}
+
+.result-date {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.result-area.success .result-date {
+    color: #6ee7b7;
+}
+
+.result-area.error .result-label {
+    font-size: 16px;
+    color: #fda4af;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 25px;
+    }
+    .input-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .result-date {
+        font-size: 28px;
+    }
+}
