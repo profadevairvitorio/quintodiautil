@@ -2,6 +2,8 @@
 
 Uma simples e eficiente calculadora para determinar a data do quinto dia útil de qualquer mês e ano. Ideal para quem precisa saber a data exata de pagamentos e outros compromissos que seguem o calendário comercial.
 
+**[Acesse a versão online aqui](https://profadevairvitorio.github.io/quintodiautil/)**
+
 ## Funcionalidades
 
 *   **Cálculo Preciso:** Determina o 5º dia útil, desconsiderando fins de semana (sábados e domingos).
