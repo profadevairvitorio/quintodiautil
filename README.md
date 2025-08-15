@@ -43,15 +43,3 @@ A estrutura de arquivos foi organizada para separar as responsabilidades, facili
     └── script.js
 
 ```
-
-### Descrição dos Componentes
-
-- **`index.html`**: A página principal da aplicação (a calculadora).
-- **`assets/`**: Contém todos os recursos estáticos.
-  - `css/`: Arquivos de folha de estilo.
-  - `img/`: Recursos de imagem.
-- **`pages/`**: Contém todas as páginas secundárias de conteúdo e o componente de rodapé.
-  - `footer.html`: O componente de rodapé que é carregado dinamicamente em todas as páginas.
-- **`scripts/`**: Contém toda a lógica JavaScript do projeto.
-  - `script.js`: A lógica principal da calculadora.
-  - `link-manager.js`: Um script inteligente que gerencia a navegação, os caminhos dos links e o carregamento dinâmico do rodapé.
