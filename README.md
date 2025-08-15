@@ -18,8 +18,6 @@ Este é o repositório do projeto da Calculadora do 5º Dia Útil, uma ferrament
 
 ## Estrutura do Projeto
 
-A estrutura de arquivos foi organizada para separar as responsabilidades, facilitando a manutenção e a escalabilidade do projeto.
-
 ```
 /quintodiautil
 │
