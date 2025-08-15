@@ -4,7 +4,7 @@ Este é o repositório do projeto da Calculadora do 5º Dia Útil, uma ferrament
 
 **[Acesse a versão online aqui](https://profadevairvitorio.github.io/quintodiautil/)**
 
-![Screenshot do Projeto](assets/img/img_1.png)
+![Screenshot do Projeto](assets/img/preview.png)
 
 ## Funcionalidades
 
