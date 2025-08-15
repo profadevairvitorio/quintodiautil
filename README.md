@@ -1,42 +1,57 @@
 # Calculadora do 5º Dia Útil
 
-Uma simples e eficiente calculadora para determinar a data do quinto dia útil de qualquer mês e ano. Ideal para quem precisa saber a data exata de pagamentos e outros compromissos que seguem o calendário comercial.
+Este é o repositório do projeto da Calculadora do 5º Dia Útil, uma ferramenta web simples e eficiente para ajudar usuários a descobrir a data exata do quinto dia útil de qualquer mês, considerando feriados nacionais e estaduais.
 
 **[Acesse a versão online aqui](https://profadevairvitorio.github.io/quintodiautil/)**
 
+![Screenshot do Projeto](assets/img/img_1.png)
+
 ## Funcionalidades
 
-*   **Cálculo Preciso:** Determina o 5º dia útil, desconsiderando fins de semana (sábados e domingos).
-*   **Feriados Nacionais:** Integra-se com a [BrasilAPI](https://brasilapi.com.br/) para obter a lista de feriados nacionais do ano selecionado, garantindo que eles não sejam contados como dias úteis.
-*   **Feriados Estaduais:** Detecta automaticamente o estado do usuário (via IP) e considera os feriados estaduais para os estados de São Paulo (SP), Rio de Janeiro (RJ) e Espírito Santo (ES).
-*   **Interface Intuitiva:** Permite ao usuário selecionar facilmente o mês e o ano desejado.
-*   **Responsivo:** Funciona bem em diferentes tamanhos de tela.
+- **Cálculo Preciso:** Determina o 5º dia útil com base no calendário, descontando sábados, domingos e feriados.
+- **Feriados Nacionais e Estaduais:** Utiliza a [BrasilAPI](https://brasilapi.com.br/) para obter a lista de feriados nacionais e considera feriados estaduais específicos para uma maior precisão.
+- **Geolocalização (Opcional):** Detecta o estado (UF) do usuário através da API [ipwho.is](https://ipwho.is/) para aplicar automaticamente os feriados estaduais correspondentes.
+- **Interface Moderna:** Design limpo, responsivo e intuitivo, construído com foco na experiência do usuário.
+- **Páginas Essenciais:** Inclui todas as páginas necessárias para conformidade com o Google AdSense e para gerar confiança no usuário (Política de Privacidade, Termos de Uso, Sobre e Contato).
 
-## Como Usar
+---
 
-Como este é um projeto puramente front-end, não há necessidade de instalação de dependências ou de um servidor.
+## Estrutura do Projeto
 
-1.  Clone este repositório:
-    ```bash
-    git clone https://github.com/profadevairvitorio/quintodiautil.git
-    ```
-2.  Abra o arquivo `index.html` em seu navegador de preferência.
+A estrutura de arquivos foi organizada para separar as responsabilidades, facilitando a manutenção e a escalabilidade do projeto.
 
-A calculadora carregará o mês e o ano atuais e exibirá o quinto dia útil. Você pode alterar os valores para fazer novos cálculos.
+```
+/quintodiautil
+│
+├── index.html
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── img/
+│       └── img_1.png
+│
+├── pages/
+│   ├── contato.html
+│   ├── footer.html
+│   ├── politica-de-privacidade.html
+│   ├── sobre.html
+│   └── termos-de-uso.html
+│
+└── scripts/
+    ├── link-manager.js
+    └── script.js
 
-## Tecnologias Utilizadas
+```
 
-*   **HTML5**
-*   **CSS3**
-*   **JavaScript**
-*   **APIs:**
-    *   [BrasilAPI](https://brasilapi.com.br/) para feriados nacionais.
-    *   [ipwho.is](https://ipwho.is/) para geolocalização e detecção do estado.
+### Descrição dos Componentes
 
-## Screenshot
-
-![Screenshot da Calculadora](img.png)
-
-## Licença
-
-Este projeto é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- **`index.html`**: A página principal da aplicação (a calculadora).
+- **`assets/`**: Contém todos os recursos estáticos.
+  - `css/`: Arquivos de folha de estilo.
+  - `img/`: Recursos de imagem.
+- **`pages/`**: Contém todas as páginas secundárias de conteúdo e o componente de rodapé.
+  - `footer.html`: O componente de rodapé que é carregado dinamicamente em todas as páginas.
+- **`scripts/`**: Contém toda a lógica JavaScript do projeto.
+  - `script.js`: A lógica principal da calculadora.
+  - `link-manager.js`: Um script inteligente que gerencia a navegação, os caminhos dos links e o carregamento dinâmico do rodapé.

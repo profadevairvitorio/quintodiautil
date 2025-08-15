@@ -135,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
     populateMonths();
     yearInput.value = new Date().getFullYear();
     monthSelect.value = new Date().getMonth();
-    document.getElementById('current-year').textContent = new Date().getFullYear();
 
     calculateBtn.addEventListener('click', calculateFifthBusinessDay);
 
