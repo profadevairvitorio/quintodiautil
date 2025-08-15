@@ -6,25 +6,23 @@
     <title>Calculadora do 5º Dia Útil</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <main class="card">
     <header>
         <h1 class="card-title">5º Dia Útil</h1>
-        <p class="card-subtitle">Insira o mês e o ano para descobrir a data do quinto dia útil.</p>
+        <p class="card-subtitle">Selecione o mês e o ano para descobrir a data.</p>
     </header>
 
     <div class="input-group">
         <div class="input-field">
-            <label for="month">Mês</label>
             <select id="month"></select>
         </div>
 
         <div class="input-field">
-            <label for="year">Ano</label>
             <input type="number" id="year" value="">
         </div>
     </div>
@@ -36,10 +34,9 @@
 
 </main>
 
-<footer class="footer">
-    <p>&copy; <span id="current-year"></span> <a href="https://vitoriosistemas.com" target="_blank" rel="noopener noreferrer" class="creator-link">Vitório Sistemas</a>. Todos os direitos reservados.</p>
-</footer>
+<div id="footer-placeholder"></div>
 
-<script src="script.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/link-manager.js"></script>
 </body>
 </html>
