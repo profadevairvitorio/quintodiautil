@@ -11,30 +11,43 @@
 </head>
 <body>
 
-<main class="card">
-    <header>
-        <h1 class="card-title">5º Dia Útil</h1>
-        <p class="card-subtitle">Selecione o mês e o ano para descobrir a data.</p>
-    </header>
-
-    <div class="input-group">
-        <div class="input-field">
-            <select id="month"></select>
-        </div>
-
-        <div class="input-field">
-            <input type="number" id="year" value="">
-        </div>
+<div class="body-wrapper">
+    <div class="ad-container ad-left">
+        <p>Anuncie Aqui</p>
     </div>
 
-    <button id="calculateBtn">Calcular</button>
+    <div class="main-container">
+        <main class="card">
+            <header>
+                <h1 class="card-title">5º Dia Útil</h1>
+                <p class="card-subtitle">Selecione o mês e o ano para descobrir a data.</p>
+            </header>
 
-    <div id="result" class="result-area">
+            <div class="input-group">
+                <div class="input-field">
+                    <select id="month"></select>
+                </div>
+
+                <div class="input-field">
+                    <input type="number" id="year" value="">
+                </div>
+            </div>
+
+            <button id="calculateBtn">Calcular</button>
+
+            <div id="result" class="result-area">
+            </div>
+
+        </main>
+
+        <div id="footer-placeholder"></div>
     </div>
 
-</main>
+    <div class="ad-container ad-right">
+        <p>Anuncie Aqui</p>
+    </div>
+</div>
 
-<div id="footer-placeholder"></div>
 
 <script src="scripts/script.js"></script>
 <script src="scripts/link-manager.js"></script>
